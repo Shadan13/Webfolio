@@ -36,6 +36,15 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #000610;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.5s;
+    z-index: 100;
+}
+
+nav.hide {
+    top: -107.79px;
 }
 
 .nav-logo {
@@ -119,7 +128,7 @@ header h1 span {
 }
 
 header p {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 350;
     color: #e5e5e5;
     margin-top: 12px;
@@ -315,6 +324,8 @@ footer .cols .about-col p {
 
 footer .cols .links-col {
     margin-left: auto;
+    display: flex;
+    justify-content: flex-end
 }
 
 footer .cols .links-col a {

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <script defer src="js/script.js"></script>
     <title>Shadan's Webfolio</title>
 </head>
 
@@ -15,7 +15,7 @@
 
     <nav>
         <div class="nav-logo">
-            <img src="images/logo.png">
+            <img src="images/logo.png" alt="SS logo">
         </div>
 
         <ul class="nav-links">
@@ -25,7 +25,7 @@
             <li id="link4" class="link"><a href="#projects">Projects</a></li>
             <li id="link5" class="link"><a href="#">Contact</a></li>
         </ul>
-        <a href="#">
+        <a href="https://github.com/Shadan13" target="_blank" rel="noopener noreferrer">
             <button class="btn">Surprise Me</button>
         </a>
 
@@ -55,21 +55,21 @@
                 <div class="content">
                     <h4>2018 - 2019</h4>
                     <h3>Elias Park Primary School</h3>
-                    <img src="images/EPPS.png">
+                    <img src="images/EPPS.png" alt="EPPS logo">
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <h4>2020 - 2023</h4>
                     <h3>Victoria School<br><br></h3>
-                    <img src="images/VS.png">
+                    <img src="images/VS.png" alt="VS logo">
                 </div>
             </div>
             <div class="card">
                 <div class="content">
                     <h4>2024 - Present</h4>
                     <h3>Victoria Junior College</h3>
-                    <img src="images/VJC.png">
+                    <img src="images/VJC.png" alt="VJC logo">
                 </div>
             </div>
         </div>
@@ -115,7 +115,8 @@
     <section class="container" id="achievements">
         <h2 class="header">My Achievements</h2>
         <p class="sub-header">
-            This section highlights some of my most noteworthy accomplishments, including awards and certifications. Here, you'll get a glimpse of my dedication, impact, and value!
+            This section highlights some of my most noteworthy accomplishments, including awards and certifications.
+            Here, you'll get a glimpse of my dedication, impact, and value!
         </p>
         <div class="achievements">
             <table>
@@ -168,7 +169,8 @@
     <section class="container" id="projects">
         <h2 class="header">My Projects</h2>
         <p class="sub-header">
-            Here is a selection of projects I've completed, showcasing my skills and creative problem-solving abilities. Explore a
+            Here is a selection of projects I've completed, showcasing my skills and creative problem-solving abilities.
+            Explore a
             variety of projects to get a sense of my experience and the types of challenges I can tackle.
         </p>
         <div class="projects">
@@ -179,24 +181,29 @@
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/Shadan13/PlantClickerGame"><u>Plant Clicker Game</u></a></td>
+                        <td><a href="https://github.com/Shadan13/PlantClickerGame" target="_blank"
+                                rel="noopener noreferrer"><u>Plant Clicker Game</u></a></td>
                         <td>Simple game made with Python using Tkinter library for GUI. Inspired by <a
-                                href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>.</td>
+                                href="https://orteil.dashnet.org/cookieclicker/" target="_blank"
+                                rel="noopener noreferrer">Cookie Clicker</a>.</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/Shadan13/PasswordGen"><u>Password Generator</u></a></td>
+                        <td><a href="https://github.com/Shadan13/PasswordGen" target="_blank"
+                                rel="noopener noreferrer"><u>Password Generator</u></a></td>
                         <td>Generates an 8-character (alphanumeric) password using the Random library in Python. Was
                             used for a project involving developing a digital smart door lock connected to IoT.</td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/Shadan13/CircleInscribedTriangle"><u>Circle Inscribed
+                        <td><a href="https://github.com/Shadan13/CircleInscribedTriangle" target="_blank"
+                                rel="noopener noreferrer"><u>Circle Inscribed
                                     Triangle</u></a></td>
                         <td>This Python project calculates the length of side, perimeter, and area of a triangle
                             inscribed inside a circle of given radius. Also gives circumference and area of the circle.
                         </td>
                     </tr>
                     <tr>
-                        <td><a href="https://github.com/Shadan13/Pokedex"><u>Pokedex</u></a></td>
+                        <td><a href="https://github.com/Shadan13/Pokedex" target="_blank"
+                                rel="noopener noreferrer"><u>Pokedex</u></a></td>
                         <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, et. Provident, accusantium
                             sequi? Atque voluptate nesciunt eum cum, explicabo nam autem labore molestiae est illo nihil
                             magni earum repellendus eveniet.</td>
@@ -213,8 +220,8 @@
                 <p>Victoria Junior College</p>
             </div>
 
-            <div class="links-col" style="display: flex; justify-content: flex-end">
-                <a href="#">Back to Top <i class="ri-arrow-up-s-fill"></i></a>
+            <div class="links-col">
+                <a href="#">Back to Top <i class='bx bxs-upvote'></i></a>
             </div>
         </div>
     </footer>
