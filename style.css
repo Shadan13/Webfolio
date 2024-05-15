@@ -23,7 +23,7 @@ a {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #171314;
+    background-color: #000814;
 }
 
 nav {
@@ -35,7 +35,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #272425;
+    background-color: #000610;
 }
 
 .nav-logo {
@@ -52,7 +52,7 @@ nav {
 .link a {
     position: relative;
     padding-bottom: 0.75rem;
-    color: #fff;
+    color: #E5E5E5;
 }
 
 .link a::after {
@@ -62,7 +62,7 @@ nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: #6E8587;
+    background-color: #FCA311;
     transition: all 0.3s ease;
 }
 
@@ -74,14 +74,14 @@ nav {
     padding: 1rem 2rem;
     font-size: 1rem;
     color: #000;
-    background-color: #6E8587;
+    background-color: #F3C16E;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #434C4E;
+    background-color: #FCA311;
     color: #fff;
 }
 
@@ -93,12 +93,12 @@ nav {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px #6E8587;
+    box-shadow: 0 0 1000px 50px #14213D;
     z-index: -100;
 }
 
 header {
-    height: 720px;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,18 +111,20 @@ header h1 {
     font-size: 64px;
     font-weight: 600;
     line-height: 4rem;
+    text-align: center;
 }
 
 header h1 span {
-    color: #6E8587;
+    color: #FCA311;
 }
 
 header p {
     font-size: 32px;
     font-weight: 400;
-    color: #ccc;
+    color: #e5e5e5;
     margin-top: 12px;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 section .header {
@@ -149,7 +151,7 @@ section .header {
 
 .about .card {
     padding: 3rem 2rem;
-    background-color: #272425;
+    background-color: #0A1529;
     display: flex;
     flex-direction: column;
     border: 2px solid transparent;
@@ -158,13 +160,14 @@ section .header {
 }
 
 .about .card:hover {
-    background-color: #323232;
-    border-color: #6E8587;
+    background-color: #14213D;
+    border-color: #F3C16E;
 }
 
 .about .card .content {
     flex: 1;
-    margin-bottom: 2rem;
+    position: relative;
+    align-items: center;
 }
 
 .about .card h4 {
@@ -191,7 +194,7 @@ section .header {
 }
 
 .skills .card {
-    background-color: #272425;
+    background-color: #0A1529;
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
@@ -199,13 +202,13 @@ section .header {
 }
 
 .skills .card:hover {
-    background-color: #343233;
-    border-color: #6E8587;
+    background-color: #14213D;
+    border-color: #F3C16E;
 }
 
 .skills .card span {
     display: inline-block;
-    background-color: #6E8587;
+    background-color: #FCA311;
     padding: 2px 9px;
     padding-bottom: 0px;
     margin-bottom: 1rem;
@@ -232,7 +235,7 @@ section .header {
     table,
     th,
     td {
-        border: 2.25px solid #ccc;
+        border: 2.25px solid #e5e5e5;
         border-collapse: collapse;
     }
 
@@ -253,7 +256,7 @@ section .header {
     table,
     th,
     td {
-        border: 2.25px solid #ccc;
+        border: 2.25px solid #e5e5e5;
         border-collapse: collapse;
     }
 
@@ -268,12 +271,12 @@ section .header {
     }
 
     a {
-        color: #6E8587;
+        color: #F3C16E;
         transition: color 0.3s ease;
     }
 
     a:hover {
-        color: #434C4E;
+        color: #FCA311;
     }
 }
 
@@ -291,7 +294,7 @@ section .header {
 
 footer {
     position: relative;
-    background: #272425;
+    background-color: #000610;
     padding: 40px 50px 40px;
     margin-top: 100px;
 }
@@ -301,12 +304,12 @@ footer .cols {
 }
 
 footer .cols .about-col h3 {
-    color: #6E8587;
+    color: #FCA311;
     margin-bottom: 10px;
 }
 
 footer .cols .about-col p {
-    color: #cccccc;
+    color: #e5e5e5;
     font-size: 13px;
 }
 
@@ -317,7 +320,7 @@ footer .cols .links-col {
 footer .cols .links-col a {
     display: block;
     text-decoration: none;
-    color: #434C4E;
+    color: #e5e5e5;
     font-size: 20px;
     margin-top: 1.5vh;
     transition: color 0.3s ease;
@@ -325,14 +328,38 @@ footer .cols .links-col a {
 }
 
 footer .cols .links-col a:hover {
-    color: #6E8587;
+    color: #F3C16E;
 }
 
 .copyright {
-    max-width: 1200px;
     margin: auto;
     padding: 1rem;
-    color: #fff;
+    color: #888;
     font-size: 0.8rem;
     text-align: center;
+    background-color: #00050F;
+}
+
+@media (width < 1100px) {
+    .nav-links {
+        display: none;
+    }
+
+    .about {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 600px) {
+    .about {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
