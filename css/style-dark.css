@@ -259,6 +259,16 @@ section .header {
         width: 100%;
         color: #fff;
     }
+
+    a {
+        color: #F3C16E;
+        transition: color 0.3s ease;
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: #FCA311;
+    }
 }
 
 .projects {
