@@ -6,7 +6,6 @@
     outline: none;
     border: none;
     box-sizing: border-box;
-    transition: all ease 0.3s;
 }
 
 html {
@@ -25,7 +24,7 @@ a {
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #EBF3FF;
-    transition: all ease 0.5s;
+    transition: all 0.3s ease;
 }
 
 nav {
@@ -41,7 +40,8 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
-    transition: ease 0.3s;
+    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
     z-index: 100;
 }
 
@@ -356,6 +356,7 @@ footer {
     background-color: #e6efff;
     padding: 40px 50px 40px;
     margin-top: 100px;
+    transition: all 0.3s ease;
 }
 
 footer .cols {
@@ -390,6 +391,7 @@ footer .socials i:hover {
     font-size: 0.8rem;
     text-align: center;
     background-color: #E3EDFF;
+    transition: all 0.3s ease;
 }
 
 @media (width < 1100px) {
