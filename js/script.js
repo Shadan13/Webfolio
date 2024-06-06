@@ -1,6 +1,5 @@
-const navbar = document.querySelector('nav');
-
 let prevScrollPos = window.pageYOffset;
+const navbar = document.querySelector('nav');
 
 window.addEventListener('scroll', () => {
     const currentScrollPos = window.pageYOffset;
@@ -14,6 +13,10 @@ window.addEventListener('scroll', () => {
     }
 
     prevScrollPos = currentScrollPos;
+
+    navbar.addEventListener('transitionend', () => {
+        navbar.style.transition = 'ease 0.3s'; // change transition duration after transformation is complete
+    });
 });
 
 function scrollToTop() {
